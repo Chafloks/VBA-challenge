@@ -8,10 +8,18 @@ Dim op As Double
 Dim cl As Double
 Dim x As Long
 Dim a As Double
-
+        
 lrow1 = Cells(Rows.count, 1).End(xlUp).row
-lrow2 = Cells(Rows.count, 11).End(xlUp).row
 row = 1
+
+Cells(1, 11).Value = "Ticker"
+Cells(1, 12).Value = "Yearly change"
+Cells(1, 13).Value = "% of yearly change"
+Cells(1, 14).Value = "Total Volume"
+Cells(1, 16).Value = "Greatest % Increase"
+Cells(1, 17).Value = "Greatest % Deccrease"
+Cells(1, 18).Value = "Greatest Total Volume"
+
 For i = 2 To lrow1
         found = 0
         For j = 2 To count + 2

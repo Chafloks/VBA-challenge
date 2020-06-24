@@ -35,8 +35,6 @@ For i = 2 To lrow1
                 Cells(j, 14).Value = Cells(j, 14).Value + Cells(i, 7).Value
                 x = 1
                 Exit For
-            ElseIf Cells(i + 1, 2) = Null Then
-                found = 0
             End If
         Next j
         If found = 0 Then

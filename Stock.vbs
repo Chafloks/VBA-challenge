@@ -43,7 +43,7 @@ For i = 2 To lrow1
         cl = Cells(i, 6).Value
         diff = cl - op
         If op = 0 Then
-            perc = Null
+            perc = 0
         Else
             perc = diff / op
         End If
@@ -73,9 +73,9 @@ For i = 2 To lrow2
     End If
 Next i
 a = Application.WorksheetFunction.Max(Range("K:K"))
-Cells(2, 13).Value = a * 100 & "%"
+Cells(2, 13).Value = a
 a = Application.WorksheetFunction.Min(Range("K:K"))
-Cells(2, 14).Value = a * 100 & "%"
+Cells(2, 14).Value = a
 a = Application.WorksheetFunction.Max(Range("L:L"))
 Cells(2, 15).Value = a
 

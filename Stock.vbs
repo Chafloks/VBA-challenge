@@ -59,6 +59,7 @@ For i = 2 To lrow1
             op = Cells(i, 3)
         End If
 Next i
+
 lrow2 = Cells(Rows.count, 11).End(xlUp).row
 cl = Cells(lrow1, 6).Value
 Cells(lrow2, 12).Value = cl - op
